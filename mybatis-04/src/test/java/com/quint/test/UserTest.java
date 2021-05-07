@@ -6,7 +6,7 @@ import com.quint.util.MybatisUtil;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 
-public class UserTest {
+public class   UserTest {
     public static void main(String[] args) {
 
     }
@@ -17,7 +17,7 @@ public class UserTest {
 
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
 
-        User user = mapper.getUserById(4);
+        User user = mapper.getUserById(2);
         System.out.println(user);
 
         sqlSession.commit();
